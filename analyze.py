@@ -54,14 +54,9 @@ def perform_analyze(dataset_name, label):
     # Create a multi-axes layout for the histograms
     fig, axes = plt.subplots(nrows=num_columns, ncols=1, figsize=(12, 8))
 
-    # Plot histograms for each column
-    for idx, column in enumerate(dataset.columns):
-        dataset[column].hist(ax=axes[idx])
-        axes[idx].set_title(f'Histogram of {column}')
-
-    # Adjust the layout to fit the plot inside the figure
-    plt.tight_layout()
-
+    # Histograms for all columns
+    plt.figure(figsize=(12, 8))
+    dataset.hist(ax=plt.gca())
     plt.suptitle('Histograms of columns')
     plt.savefig(os.path.join(output_directory, 'histograms.png'))
     plt.close()
