@@ -30,8 +30,8 @@ def mse(model_name, y_true, y_pred):
 
 # Function to perform ensemble modeling and select the best model
 def perform_modeling(dataset_name, label):
-    datasets_path = os.getenv("DATASETS_PATH")
-    models_path = os.getenv("MODELS_PATH")
+    datasets_path = 'datasets/'
+    models_path = 'models/'
 
     dataset = pd.read_csv(os.path.join(datasets_path, dataset_name + '.csv'))
 

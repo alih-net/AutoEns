@@ -4,7 +4,7 @@ import pickle
 from sklearn.preprocessing import LabelEncoder
 
 def perform_predict(model, data, columns):
-    models_path = os.getenv("MODELS_PATH")
+    models_path = 'models/'
     models_path = os.path.join(models_path, model)
 
     with open(os.path.join(models_path, 'model.pkl'), 'rb') as f:

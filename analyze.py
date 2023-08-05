@@ -4,8 +4,8 @@ import pandas as pd
 import os
 
 def perform_analyze(dataset_name, label):
-    datasets_path = os.getenv("DATASETS_PATH")
-    analyses_path = os.getenv("ANALYSES_PATH")
+    datasets_path = 'datasets/'
+    analyses_path = 'analyses/'
 
     dataset = pd.read_csv(os.path.join(datasets_path, dataset_name + '.csv'))
 

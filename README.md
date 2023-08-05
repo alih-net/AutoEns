@@ -44,6 +44,21 @@ Use this endpoint to make predictions using the trained ensemble model.
 
 `curl --location 'http://127.0.0.1:5000/predict' --form 'model="HeartFailure"' --form 'data="46,M,ASY,120,277,0,Normal,125,Y,1,Flat"' --form 'columns="Age,Sex,ChestPainType,RestingBloodPressure,Cholesterol,FastingBloodSugar,RestingElectrocardiography,MaxHeartRate,ExerciseAngina,Oldpeak,STSlope"' `
 
+Unit Tests
+-------
+To run the unit tests for this project, execute the following command in the terminal:
+
+`python -m unittest discover -s tests -p "*_test.py"`
+
+The command above will discover and run all the test files that end with _test.py in the tests directory.
+
+After running the tests, you should see an output similar to the following:
+
+    ----------------------------------------------------------------------
+    Ran [number] tests in [time]s
+
+    OK
+
 Dataset Citation
 -------
 As an example, this project uses the "Heart Failure Prediction Dataset" provided by fedesoriano in September 2021. Retrieved in July 2023 from Kaggle: https://www.kaggle.com/fedesoriano/heart-failure-prediction.
