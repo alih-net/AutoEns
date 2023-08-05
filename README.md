@@ -8,7 +8,13 @@ AutoEns is an intelligent API-based framework designed for automated ensemble le
 
 Getting Started
 -------------
-### 1. Create a Virtual Environment
+### 1. Clone the Repository and Change Directory
+First, clone the repository and navigate into it using the following commands:
+
+    git clone https://github.com/alih-net/AutoEns.git # or git clone git@github.com:alih-net/AutoEns.git
+    cd AutoEns
+
+### 2. Create a Virtual Environment
 A virtual environment helps isolate your project's dependencies from the system-wide Python installation.
 #### On Linux/macOS
     python3 -m virtualenv venv
@@ -18,7 +24,7 @@ A virtual environment helps isolate your project's dependencies from the system-
     python -m virtualenv venv
     virtualenv\Scripts\activate
 
-### 2. Install Dependencies
+### 3. Install Dependencies
 Once the virtual environment is activated, use pip to install the required packages from the requirements.txt file.
 
     pip install -r requirements.txt
