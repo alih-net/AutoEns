@@ -6,6 +6,23 @@ Description
 
 AutoEns is an intelligent API-based framework designed for automated ensemble learning model development and deployment. It streamlines the process of creating, training, and using ensemble models for various machine learning tasks.
 
+Getting Started
+-------------
+### 1. Create a Virtual Environment
+A virtual environment helps isolate your project's dependencies from the system-wide Python installation.
+#### On Linux/macOS
+    python3 -m virtualenv venv
+    source venv/bin/activate
+
+#### On Windows
+    python -m virtualenv venv
+    virtualenv\Scripts\activate
+
+### 2. Install Dependencies
+Once the virtual environment is activated, use pip to install the required packages from the requirements.txt file.
+
+    pip install -r requirements.txt
+
 API Endpoints
 -------------
 
@@ -30,6 +47,10 @@ Use this endpoint to make predictions using the trained ensemble model.
 Dataset Citation
 -------
 As an example, this project uses the "Heart Failure Prediction Dataset" provided by fedesoriano in September 2021. Retrieved in July 2023 from Kaggle: https://www.kaggle.com/fedesoriano/heart-failure-prediction.
+
+Contributing
+-------
+We welcome contributions from the community. If you find any issues or have suggestions to improve AutoEns, please feel free to open an issue or submit a pull request. Let's collaborate to make ensemble learning more accessible and effective for everyone.
 
 License
 -------
